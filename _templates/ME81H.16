@@ -1,0 +1,24 @@
+date_added: 2021-12-30
+title: Floor Heating or Water/Gas Boiler
+model: ME81H.16
+image: /assets/images/ME81H.jpg
+template9: '{"NAME":"ME81H Thermostat","GPIO":[1,1,1,2304,1,2272,0,0,1,0,1,0,1,0],"FLAG":0,"BASE":54}' 
+ON; Tuyasend1 1.1
+Off; Tuyasend1 1.0
+Set temperature; Tuyasend2 16,% var%
+Thermostat lock; Tuyasend2 40, -1
+Unlock Thermostat; Tuyasend2 40.1
+Temperature calibration; TuyaSend2 27,% var% (adjust measured temperature)
+Sensor mode; TuyaSend4 43.0 | 1 | 2 (0 = built-in sensor | 1 = floor sensor | 2 = both sensors)
+Frost protection function; TuyaSend1 10.0 | 1 (0 = off | 1 = on)
+Set maximum temperature; TuyaSend2 19,% var%
+Set the minimum temperature; TuyaSend2 26,% var%
+Set switching differential range; TuyaSend2 101,% var%
+Set time mode; TuyaSend4 102,0 | 1 | 2 | 3 (0 = Off | 1 = Mon. Tue. Wed. Thu. Fri. | 2 = Mon. Tue. Wed. Thu. Fri. Sat. | 3 = Mon. Tue. Wed . Thu. Fri. Sat. Sun.)
+link: https://www.aliexpress.com/item/4000398480147.html
+link2: 
+mlink: https://www.alibaba.com/product-detail/heating-thermostat-WiFi-ME81-room-thermostat_62398877565.html
+flash: serial
+category: misc
+type: Thermostat
+standard: eu
